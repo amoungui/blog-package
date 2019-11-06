@@ -1,5 +1,8 @@
 <?php
 
+Route::resource('post', '\Scaffolder\Scafold\Http\Controllers\PostController', ['except' => ['show', 'edit', 'update']]);
+
+
 Route::group(['middleware' => ['web']], function () {
 
     Route::get('home', '\Scaffolder\Scafold\Http\Controllers\HomeController@index');
