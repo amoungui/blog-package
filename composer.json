@@ -1,0 +1,27 @@
+{
+    "name": "scaffolder/scafold",
+    "description": "Package Blog with Laravel Framework",
+    "homepage": "https://github.com/amoungui",
+    "license": "MIT",
+    "authors": [{
+        "name": "Amoungui Serge",
+        "email": "samoungui@gmail.com"
+    }],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.1",
+        "laravelcollective/html": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Scaffolder\\Scafold\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Scaffolder\\Scafold\\ScafoldServiceProvider"
+            ]
+        }
+    }
+}
